@@ -6,6 +6,7 @@ Release:	1
 License:	GPL v2
 Group:		X11/Applications
 Source0:	%{name}-%{version}.tar.bz2
+# Source0-md5:	3e9e4da2a764df34ebe49fae1bfc63e3
 Source1:	%{name}.desktop
 BuildRequires:	autoconf
 BuildRequires:	automake
