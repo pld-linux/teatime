@@ -38,8 +38,6 @@ install -d $RPM_BUILD_ROOT{%{_applnkdir}/Office,%{_pixmapsdir}}
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-gzip -9nf AUTHORS
-
 install teatime.png $RPM_BUILD_ROOT%{_pixmapsdir}
 install %{SOURCE1} $RPM_BUILD_ROOT/%{_applnkdir}/Office
 
@@ -48,7 +46,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
+%doc AUTHORS
 %attr(755,root,root) %{_bindir}/*
 %{_pixmapsdir}/*
 %{_datadir}/%{name}
