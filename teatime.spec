@@ -1,7 +1,7 @@
 Summary:	Tea timer
 Summary(pl):	Herbaciany sekundnik
 Name:		teatime
-Version:	0.1
+Version:	0.2
 Release:	1
 License:	GPL
 Group:		X11/Applications
