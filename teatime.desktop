@@ -1,8 +1,8 @@
 [Desktop Entry]
 Name=Tea timer
-Name[pl]=Herbaciany sekundnik
+Name[pl]=Herbaciany budzik
 Comment=Remember about tea!
-Comment[pl]=Pamiêtaj o herbacie!
+Comment[pl]=Pamiętaj o herbacie!
 Icon=teatime.png
 Exec=teatime
 Terminal=0
