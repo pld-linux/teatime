@@ -3,12 +3,13 @@ Summary(pl):	Herbaciany sekundnik
 Name:		teatime
 Version:	0.2
 Release:	1
-License:	GPL
+License:	GPL v2
 Group:		X11/Applications
 Source0:	%{name}-%{version}.tar.bz2
-BuildRequires:	gtk+-devel
+Source1:	%{name}.desktop
 BuildRequires:	autoconf
 BuildRequires:	automake
+BuildRequires:	gtk+-devel
 BuildRequires:	libtool
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -39,19 +40,8 @@ install -d $RPM_BUILD_ROOT{%{_applnkdir}/Office,%{_pixmapsdir}}
 
 gzip -9nf AUTHORS
 
-cp teatime.png $RPM_BUILD_ROOT%{_pixmapsdir}
-
-cat >$RPM_BUILD_ROOT%{_applnkdir}/Office/teatime.desktop << EOF
-[Desktop Entry]
-Name=Tea timer
-Name[pl]=Herbaciany sekundnik
-Comment=Remember about tea!
-Comment[pl]=Pamiêtaj o herbacie!
-Icon=teatime.png
-Exec=teatime
-Terminal=0
-Type=Application
-EOF
+install teatime.png $RPM_BUILD_ROOT%{_pixmapsdir}
+install %{SOURCE1} $RPM_BUILD_ROOT/%{_applnkdir}/Office
 
 %clean
 rm -rf $RPM_BUILD_ROOT
