@@ -14,7 +14,6 @@ BuildRequires:	gtk+-devel
 BuildRequires:	libtool
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-
 %description
 You make tea, then you forget about it, so you find it cold after a
 hour or so? Tea timer is solution for you.
@@ -39,7 +38,7 @@ install -d $RPM_BUILD_ROOT{%{_applnkdir}/Office,%{_pixmapsdir}}
 	DESTDIR=$RPM_BUILD_ROOT
 
 install teatime.png $RPM_BUILD_ROOT%{_pixmapsdir}
-install %{SOURCE1} $RPM_BUILD_ROOT/%{_applnkdir}/Office
+install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/Office
 
 %clean
 rm -rf $RPM_BUILD_ROOT
