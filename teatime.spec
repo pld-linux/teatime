@@ -1,5 +1,5 @@
 Summary:	Tea timer
-Summary(pl.UTF-8):   Herbaciany sekundnik
+Summary(pl.UTF-8):	Herbaciany sekundnik
 Name:		teatime
 Version:	0.2
 Release:	1
