@@ -1,5 +1,5 @@
 Summary:	Tea timer
-Summary(pl):	Herbaciany sekundnik
+Summary(pl.UTF-8):   Herbaciany sekundnik
 Name:		teatime
 Version:	0.2
 Release:	1
@@ -18,9 +18,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 You make tea, then you forget about it, so you find it cold after a
 hour or so? Tea timer is solution for you.
 
-%description -l pl
-Robisz sobie herbatê, po czym o niej zapominasz, znajduj±c j± zimn± za
-godzinê? Herbaciany sekundnik jest rozwi±zaniem twoich problemów.
+%description -l pl.UTF-8
+Robisz sobie herbatÄ™, po czym o niej zapominasz, znajdujÄ…c jÄ… zimnÄ… za
+godzinÄ™? Herbaciany sekundnik jest rozwiÄ…zaniem twoich problemÃ³w.
 
 %prep
 %setup -q
